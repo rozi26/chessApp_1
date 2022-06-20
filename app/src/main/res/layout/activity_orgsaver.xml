@@ -1,0 +1,1074 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:id="@+id/bord"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <FrameLayout
+            android:id="@+id/prohelper"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_marginRight="150dp"/>
+        <FrameLayout
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_toRightOf="@id/prohelper"
+            android:id="@+id/helper"/>
+
+        <ImageView
+            android:id="@+id/a1"
+            android:layout_marginTop="15dp"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:layout_toLeftOf="@+id/a2"
+            android:background="#FFFFFF"/>
+
+        <ImageView
+            android:id="@+id/a2"
+            android:layout_marginTop="15dp"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:layout_toLeftOf="@+id/a3"
+            android:background="#000000"/>
+
+        <ImageView
+            android:id="@+id/a3"
+            android:layout_marginTop="15dp"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:layout_toLeftOf="@+id/a4"
+            android:background="#FFFFFF"/>
+
+        <ImageView
+            android:id="@+id/a4"
+            android:layout_marginTop="15dp"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:layout_toLeftOf="@+id/helper"
+            android:background="#000000"/>
+
+        <ImageView
+            android:id="@+id/a5"
+            android:layout_marginTop="15dp"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:layout_toRightOf="@+id/helper"
+            android:background="#FFFFFF"/>
+
+        <ImageView
+            android:id="@+id/a6"
+            android:layout_marginTop="15dp"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:layout_toRightOf="@+id/a5"
+            android:background="#000000"/>
+
+        <ImageView
+            android:id="@+id/a7"
+            android:layout_marginTop="15dp"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:layout_toRightOf="@+id/a6"
+            android:background="#FFFFFF"/>
+
+        <ImageView
+            android:id="@+id/a8"
+            android:layout_marginTop="15dp"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:layout_toRightOf="@+id/a7"
+            android:background="#000000"/>
+
+        <ImageView
+            android:id="@+id/b1"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:layout_below="@+id/a1"
+            android:layout_toLeftOf="@+id/b2"
+            android:background="#000000"/>
+
+        <ImageView
+            android:id="@+id/b2"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:layout_below="@+id/a2"
+            android:layout_toLeftOf="@+id/b3"
+            android:background="#FFFFFF"/>
+
+        <ImageView
+            android:id="@+id/b3"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:layout_below="@+id/a3"
+            android:layout_toLeftOf="@+id/b4"
+            android:background="#000000"/>
+
+        <ImageView
+            android:id="@+id/b4"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:layout_below="@+id/a4"
+            android:layout_toLeftOf="@+id/helper"
+            android:background="#FFFFFF"/>
+
+        <ImageView
+            android:id="@+id/b5"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:layout_below="@+id/a5"
+            android:layout_toRightOf="@+id/helper"
+            android:background="#000000"/>
+
+        <ImageView
+            android:id="@+id/b6"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:layout_below="@+id/a6"
+            android:layout_toRightOf="@+id/b5"
+            android:background="#FFFFFF"/>
+
+        <ImageView
+            android:id="@+id/b7"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:layout_below="@+id/a7"
+            android:layout_toRightOf="@+id/b6"
+            android:background="#000000"/>
+
+        <ImageView
+            android:id="@+id/b8"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:layout_below="@+id/a8"
+            android:layout_toRightOf="@+id/b7"
+            android:background="#FFFFFF"/>
+
+        <ImageView
+            android:id="@+id/c1"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:layout_below="@+id/b1"
+            android:layout_toLeftOf="@+id/c2"
+            android:background="#FFFFFF"/>
+
+        <ImageView
+            android:id="@+id/c2"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:layout_below="@+id/b2"
+            android:layout_toLeftOf="@+id/c3"
+            android:background="#000000"/>
+
+        <ImageView
+            android:id="@+id/c3"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:layout_below="@+id/b3"
+            android:layout_toLeftOf="@+id/c4"
+            android:background="#FFFFFF"/>
+
+        <ImageView
+            android:id="@+id/c4"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:layout_below="@+id/b4"
+            android:layout_toLeftOf="@+id/helper"
+            android:background="#000000"/>
+
+        <ImageView
+            android:id="@+id/c5"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:layout_below="@+id/b5"
+            android:layout_toRightOf="@+id/helper"
+            android:background="#FFFFFF"/>
+
+        <ImageView
+            android:id="@+id/c6"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:layout_below="@+id/b6"
+            android:layout_toRightOf="@+id/c5"
+            android:background="#000000"/>
+
+        <ImageView
+            android:id="@+id/c7"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:layout_below="@+id/b7"
+            android:layout_toRightOf="@+id/c6"
+            android:background="#FFFFFF"/>
+
+        <ImageView
+            android:id="@+id/c8"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:layout_below="@+id/b8"
+            android:layout_toRightOf="@+id/c7"
+            android:background="#000000"/>
+
+        <ImageView
+            android:id="@+id/d1"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:layout_below="@+id/c1"
+            android:layout_toLeftOf="@+id/d2"
+            android:background="#000000"/>
+
+        <ImageView
+            android:id="@+id/d2"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:layout_below="@+id/c2"
+            android:layout_toLeftOf="@+id/d3"
+            android:background="#FFFFFF"/>
+
+        <ImageView
+            android:id="@+id/d3"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:layout_below="@+id/c3"
+            android:layout_toLeftOf="@+id/d4"
+            android:background="#000000"/>
+
+        <ImageView
+            android:id="@+id/d4"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:layout_below="@+id/c4"
+            android:layout_toLeftOf="@+id/helper"
+            android:background="#FFFFFF"/>
+
+        <ImageView
+            android:id="@+id/d5"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:layout_below="@+id/c5"
+            android:layout_toRightOf="@+id/helper"
+            android:background="#000000"/>
+
+        <ImageView
+            android:id="@+id/d6"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:layout_below="@+id/c6"
+            android:layout_toRightOf="@+id/d5"
+            android:background="#FFFFFF"/>
+
+        <ImageView
+            android:id="@+id/d7"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:layout_below="@+id/c7"
+            android:layout_toRightOf="@+id/d6"
+            android:background="#000000"/>
+
+        <ImageView
+            android:id="@+id/d8"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:layout_below="@+id/c8"
+            android:layout_toRightOf="@+id/d7"
+            android:background="#FFFFFF"/>
+
+        <ImageView
+            android:id="@+id/e1"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:layout_below="@+id/d1"
+            android:layout_toLeftOf="@+id/e2"
+            android:background="#FFFFFF"/>
+
+        <ImageView
+            android:id="@+id/e2"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:layout_below="@+id/d2"
+            android:layout_toLeftOf="@+id/e3"
+            android:background="#000000"/>
+
+        <ImageView
+            android:id="@+id/e3"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:layout_below="@+id/d3"
+            android:layout_toLeftOf="@+id/e4"
+            android:background="#FFFFFF"/>
+
+        <ImageView
+            android:id="@+id/e4"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:layout_below="@+id/d4"
+            android:layout_toLeftOf="@+id/helper"
+            android:background="#000000"/>
+
+        <ImageView
+            android:id="@+id/e5"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:layout_below="@+id/d5"
+            android:layout_toRightOf="@+id/helper"
+            android:background="#FFFFFF"/>
+
+        <ImageView
+            android:id="@+id/e6"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:layout_below="@+id/d6"
+            android:layout_toRightOf="@+id/e5"
+            android:background="#000000"/>
+
+        <ImageView
+            android:id="@+id/e7"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:layout_below="@+id/d7"
+            android:layout_toRightOf="@+id/e6"
+            android:background="#FFFFFF"/>
+
+        <ImageView
+            android:id="@+id/e8"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:layout_below="@+id/d8"
+            android:layout_toRightOf="@+id/e7"
+            android:background="#000000"/>
+
+        <ImageView
+            android:id="@+id/f1"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:layout_below="@+id/e1"
+            android:layout_toLeftOf="@+id/f2"
+            android:background="#000000"/>
+
+        <ImageView
+            android:id="@+id/f2"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:layout_below="@+id/e2"
+            android:layout_toLeftOf="@+id/f3"
+            android:background="#FFFFFF"/>
+
+        <ImageView
+            android:id="@+id/f3"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:layout_below="@+id/e3"
+            android:layout_toLeftOf="@+id/f4"
+            android:background="#000000"/>
+
+        <ImageView
+            android:id="@+id/f4"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:layout_below="@+id/e4"
+            android:layout_toLeftOf="@+id/helper"
+            android:background="#FFFFFF"/>
+
+        <ImageView
+            android:id="@+id/f5"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:layout_below="@+id/e5"
+            android:layout_toRightOf="@+id/helper"
+            android:background="#000000"/>
+
+        <ImageView
+            android:id="@+id/f6"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:layout_below="@+id/e6"
+            android:layout_toRightOf="@+id/f5"
+            android:background="#FFFFFF"/>
+
+        <ImageView
+            android:id="@+id/f7"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:layout_below="@+id/e7"
+            android:layout_toRightOf="@+id/f6"
+            android:background="#000000"/>
+
+        <ImageView
+            android:id="@+id/f8"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:layout_below="@+id/e8"
+            android:layout_toRightOf="@+id/f7"
+            android:background="#FFFFFF"/>
+
+        <ImageView
+            android:id="@+id/g1"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:layout_below="@+id/f1"
+            android:layout_toLeftOf="@+id/g2"
+            android:background="#FFFFFF"/>
+
+        <ImageView
+            android:id="@+id/g2"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:layout_below="@+id/f2"
+            android:layout_toLeftOf="@+id/g3"
+            android:background="#000000"/>
+
+        <ImageView
+            android:id="@+id/g3"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:layout_below="@+id/f3"
+            android:layout_toLeftOf="@+id/g4"
+            android:background="#FFFFFF"/>
+
+        <ImageView
+            android:id="@+id/g4"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:layout_below="@+id/f4"
+            android:layout_toLeftOf="@+id/helper"
+            android:background="#000000"/>
+
+        <ImageView
+            android:id="@+id/g5"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:layout_below="@+id/f5"
+            android:layout_toRightOf="@+id/helper"
+            android:background="#FFFFFF"/>
+
+        <ImageView
+            android:id="@+id/g6"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:layout_below="@+id/f6"
+            android:layout_toRightOf="@+id/g5"
+            android:background="#000000"/>
+
+        <ImageView
+            android:id="@+id/g7"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:layout_below="@+id/f7"
+            android:layout_toRightOf="@+id/g6"
+            android:background="#FFFFFF"/>
+
+        <ImageView
+            android:id="@+id/g8"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:layout_below="@+id/f8"
+            android:layout_toRightOf="@+id/g7"
+            android:background="#000000"/>
+
+        <ImageView
+            android:id="@+id/h1"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:layout_below="@+id/g1"
+            android:layout_toLeftOf="@+id/h2"
+            android:background="#000000"/>
+
+        <ImageView
+            android:id="@+id/h2"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:layout_below="@+id/g2"
+            android:layout_toLeftOf="@+id/h3"
+            android:background="#FFFFFF"/>
+
+        <ImageView
+            android:id="@+id/h3"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:layout_below="@+id/g3"
+            android:layout_toLeftOf="@+id/h4"
+            android:background="#000000"/>
+
+        <ImageView
+            android:id="@+id/h4"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:layout_below="@+id/g4"
+            android:layout_toLeftOf="@+id/helper"
+            android:background="#FFFFFF"/>
+
+        <ImageView
+            android:id="@+id/h5"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:layout_below="@+id/g5"
+            android:layout_toRightOf="@+id/helper"
+            android:background="#000000"/>
+
+        <ImageView
+            android:id="@+id/h6"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:layout_below="@+id/g6"
+            android:layout_toRightOf="@+id/h5"
+            android:background="#FFFFFF"/>
+
+        <ImageView
+            android:id="@+id/h7"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:layout_below="@+id/g7"
+            android:layout_toRightOf="@+id/h6"
+            android:background="#000000"/>
+
+        <ImageView
+            android:id="@+id/h8"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:layout_below="@+id/g8"
+            android:layout_toRightOf="@+id/h7"
+            android:background="#FFFFFF"/>
+
+        <RelativeLayout
+            android:id="@+id/chooseOrg"
+            android:layout_below="@id/h8"
+            android:layout_marginTop="10dp"
+            android:backgroundTintMode="add"
+            android:background="@color/bastBlue"
+            android:layout_width="match_parent"
+            android:layout_height="120dp">
+            <TextView
+                android:id="@+id/t01"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="name: defualt Arrangement"
+                android:textSize="26dp"
+                android:textColor="@color/white"/>
+
+            <TextView
+                android:id="@+id/t02"
+                android:layout_below="@id/t01"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="created by: default"
+                android:textSize="26dp"
+                android:textColor="@color/white"/>
+
+            <TextView
+                android:id="@+id/t03"
+                android:layout_below="@id/t02"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="goal: eat the king"
+                android:textSize="26dp"
+                android:textColor="@color/white"/>
+
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_toRightOf="@id/a8"
+            android:layout_above="@id/chooseOrg">
+
+            <Button
+                android:id="@+id/select"
+                android:layout_width="70dp"
+                android:layout_height="70dp"
+                android:text="select"
+                android:background="@drawable/roundbutton"
+                android:layout_centerHorizontal="true"
+                android:onClick="select"
+                android:layout_marginTop="25dp"/>
+
+            <Button
+                android:id="@+id/edit"
+                android:layout_width="70dp"
+                android:layout_below="@id/select"
+                android:layout_height="70dp"
+                android:onClick="edit"
+                android:background="@drawable/roundbutton"
+                android:text="edit"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="25dp"/>
+
+            <Button
+                android:id="@+id/delete2"
+                android:layout_width="70dp"
+                android:layout_below="@id/edit"
+                android:text="delete"
+                android:layout_height="70dp"
+                android:onClick="delete"
+                android:background="@drawable/roundbutton"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="25dp"/>
+
+        </RelativeLayout>
+    </RelativeLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_below="@id/bord"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:id="@+id/t10"
+                android:onClick="setOrg"
+                android:background="@color/darkGray"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <FrameLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="5dp"
+                    android:background="@color/white"/>
+
+                <TextView
+                    android:id="@+id/t11"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="name: defualt Arrangement"
+                    android:textSize="26dp"
+                    android:textColor="@color/white"/>
+
+                <TextView
+                    android:id="@+id/t12"
+                    android:layout_below="@id/t11"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="created by: default"
+                    android:textSize="26dp"
+                    android:textColor="@color/white"/>
+
+                <TextView
+                    android:id="@+id/t13"
+                    android:layout_below="@id/t12"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="goal: eat the king"
+                    android:textSize="26dp"
+                    android:layout_marginBottom="5dp"
+                    android:textColor="@color/white"/>
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/t20"
+                android:background="@color/darkGray"
+                android:onClick="setOrg"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <FrameLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="5dp"
+                    android:background="@color/white"/>
+
+                <TextView
+                    android:id="@+id/t21"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="name: defualt Arrangement"
+                    android:textSize="26dp"
+                    android:textColor="@color/white"/>
+
+                <TextView
+                    android:id="@+id/t22"
+                    android:layout_below="@id/t21"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="created by: default"
+                    android:textSize="26dp"
+                    android:textColor="@color/white"/>
+
+                <TextView
+                    android:id="@+id/t23"
+                    android:layout_below="@id/t22"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="goal: eat the king"
+                    android:textSize="26dp"
+                    android:layout_marginBottom="5dp"
+                    android:textColor="@color/white"/>
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/t30"
+                android:background="@color/darkGray"
+                android:layout_width="match_parent"
+                android:onClick="setOrg"
+                android:layout_height="wrap_content">
+
+                <FrameLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="5dp"
+                    android:background="@color/white"/>
+
+                <TextView
+                    android:id="@+id/t31"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="name: defualt Arrangement"
+                    android:textSize="26dp"
+                    android:textColor="@color/white"/>
+
+                <TextView
+                    android:id="@+id/t32"
+                    android:layout_below="@id/t31"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="created by: default"
+                    android:textSize="26dp"
+                    android:textColor="@color/white"/>
+
+                <TextView
+                    android:id="@+id/t33"
+                    android:layout_below="@id/t32"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="goal: eat the king"
+                    android:textSize="26dp"
+                    android:layout_marginBottom="5dp"
+                    android:textColor="@color/white"/>
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/t40"
+                android:background="@color/darkGray"
+                android:onClick="setOrg"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <FrameLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="5dp"
+                    android:background="@color/white"/>
+
+                <TextView
+                    android:id="@+id/t41"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="name: defualt Arrangement"
+                    android:textSize="26dp"
+                    android:textColor="@color/white"/>
+
+                <TextView
+                    android:id="@+id/t42"
+                    android:layout_below="@id/t41"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="created by: default"
+                    android:textSize="26dp"
+                    android:textColor="@color/white"/>
+
+                <TextView
+                    android:id="@+id/t43"
+                    android:layout_below="@id/t42"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="goal: eat the king"
+                    android:textSize="26dp"
+                    android:layout_marginBottom="5dp"
+                    android:textColor="@color/white"/>
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/t50"
+                android:background="@color/darkGray"
+                android:layout_width="match_parent"
+                android:onClick="setOrg"
+                android:layout_height="wrap_content">
+
+                <FrameLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="5dp"
+                    android:background="@color/white"/>
+
+                <TextView
+                    android:id="@+id/t51"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="name: defualt Arrangement"
+                    android:textSize="26dp"
+                    android:textColor="@color/white"/>
+
+                <TextView
+                    android:id="@+id/t52"
+                    android:layout_below="@id/t51"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="created by: default"
+                    android:textSize="26dp"
+                    android:textColor="@color/white"/>
+
+                <TextView
+                    android:id="@+id/t53"
+                    android:layout_below="@id/t52"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="goal: eat the king"
+                    android:textSize="26dp"
+                    android:layout_marginBottom="5dp"
+                    android:textColor="@color/white"/>
+
+            </RelativeLayout>
+
+
+            <RelativeLayout
+                android:id="@+id/t60"
+                android:background="@color/darkGray"
+                android:layout_width="match_parent"
+                android:onClick="setOrg"
+                android:layout_height="wrap_content">
+
+                <FrameLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="5dp"
+                    android:background="@color/white"/>
+
+                <TextView
+                    android:id="@+id/t61"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="name: defualt Arrangement"
+                    android:textSize="26dp"
+                    android:textColor="@color/white"/>
+
+                <TextView
+                    android:id="@+id/t62"
+                    android:layout_below="@id/t61"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="created by: default"
+                    android:textSize="26dp"
+                    android:textColor="@color/white"/>
+
+                <TextView
+                    android:id="@+id/t63"
+                    android:layout_below="@id/t62"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="goal: eat the king"
+                    android:textSize="26dp"
+                    android:layout_marginBottom="5dp"
+                    android:textColor="@color/white"/>
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/t70"
+                android:background="@color/darkGray"
+                android:onClick="setOrg"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <FrameLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="5dp"
+                    android:background="@color/white"/>
+
+                <TextView
+                    android:id="@+id/t71"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="name: defualt Arrangement"
+                    android:textSize="26dp"
+                    android:textColor="@color/white"/>
+
+                <TextView
+                    android:id="@+id/t72"
+                    android:layout_below="@id/t71"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="created by: default"
+                    android:textSize="26dp"
+                    android:textColor="@color/white"/>
+
+                <TextView
+                    android:id="@+id/t73"
+                    android:layout_below="@id/t72"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="goal: eat the king"
+                    android:textSize="26dp"
+                    android:layout_marginBottom="5dp"
+                    android:textColor="@color/white"/>
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/t80"
+                android:background="@color/darkGray"
+                android:layout_width="match_parent"
+                android:onClick="setOrg"
+                android:layout_height="wrap_content">
+
+                <FrameLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="5dp"
+                    android:background="@color/white"/>
+
+                <TextView
+                    android:id="@+id/t81"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="name: defualt Arrangement"
+                    android:textSize="26dp"
+                    android:textColor="@color/white"/>
+
+                <TextView
+                    android:id="@+id/t82"
+                    android:layout_below="@id/t81"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="created by: default"
+                    android:textSize="26dp"
+                    android:textColor="@color/white"/>
+
+                <TextView
+                    android:id="@+id/t83"
+                    android:layout_below="@id/t82"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="goal: eat the king"
+                    android:textSize="26dp"
+                    android:layout_marginBottom="5dp"
+                    android:textColor="@color/white"/>
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/t90"
+                android:background="@color/darkGray"
+                android:layout_width="match_parent"
+                android:onClick="setOrg"
+                android:layout_height="wrap_content">
+
+                <FrameLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="5dp"
+                    android:background="@color/white"/>
+
+                <TextView
+                    android:id="@+id/t91"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="name: defualt Arrangement"
+                    android:textSize="26dp"
+                    android:textColor="@color/white"/>
+
+                <TextView
+                    android:id="@+id/t92"
+                    android:layout_below="@id/t91"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="created by: default"
+                    android:textSize="26dp"
+                    android:textColor="@color/white"/>
+
+                <TextView
+                    android:id="@+id/t93"
+                    android:layout_below="@id/t92"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="goal: eat the king"
+                    android:textSize="26dp"
+                    android:layout_marginBottom="5dp"
+                    android:textColor="@color/white"/>
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/t100"
+                android:background="@color/darkGray"
+                android:onClick="setOrg"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <FrameLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="5dp"
+                    android:background="@color/white"/>
+
+                <TextView
+                    android:id="@+id/t101"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="name: defualt Arrangement"
+                    android:textSize="26dp"
+                    android:textColor="@color/white"/>
+
+                <TextView
+                    android:id="@+id/t102"
+                    android:layout_below="@id/t101"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="created by: default"
+                    android:textSize="26dp"
+                    android:textColor="@color/white"/>
+
+                <TextView
+                    android:id="@+id/t103"
+                    android:layout_below="@id/t102"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="goal: eat the king"
+                    android:textSize="26dp"
+                    android:layout_marginBottom="5dp"
+                    android:textColor="@color/white"/>
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="95dp">
+
+                <FrameLayout
+                    android:id="@+id/middler"
+                    android:layout_centerHorizontal="true"
+                    android:layout_width="0dp"
+                    android:layout_height="0dp"/>
+
+                <Button
+                    android:id="@+id/addWorld"
+                    android:layout_width="75dp"
+                    android:layout_height="75dp"
+                    android:layout_toLeftOf="@id/middler"
+                    android:background="@drawable/roundbutton"
+                    android:foreground="@android:drawable/ic_input_add"
+                    android:gravity="center"
+                    android:onClick="createNew"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginRight="10dp"
+                    android:textColor="@color/white"
+                    android:textSize="60dp" />
+
+                <Button
+                    android:id="@+id/pasteworld"
+                    android:layout_width="75dp"
+                    android:layout_height="75dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_toRightOf="@id/middler"
+                    android:background="@drawable/roundbutton"
+                    android:layout_marginTop="5dp"
+                    android:foreground="@android:drawable/ic_menu_upload"
+                    android:gravity="center"
+                    android:onClick="pasteWorld"
+                    android:textColor="@color/white"
+                    android:textSize="60dp" />
+
+            </RelativeLayout>
+
+        </LinearLayout>
+    </ScrollView>
+
+</RelativeLayout>

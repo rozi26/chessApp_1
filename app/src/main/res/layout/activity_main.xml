@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:id="@+id/page"
+    android:layout_height="match_parent"
+    android:animateLayoutChanges="true"
+    android:background="@color/lightblack"
+    tools:context=".MainActivity">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+
+    <TextView
+        android:id="@+id/Iam"
+        android:layout_width="wrap_content"
+        android:layout_height="60sp"
+        android:layout_centerHorizontal="true"
+        android:textSize="44dp"
+        android:textColor="@color/white"/>
+
+    <Button
+        android:id="@+id/donw"
+        android:layout_width="250dp"
+        android:layout_height="100dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="15dp"
+        android:layout_marginBottom="15dp"
+        android:background="@drawable/roundbutton"
+        android:onClick="startPlay"
+        android:backgroundTint="@color/bastBlue"
+        android:text="done"
+        android:textSize="50dp"
+        app:iconTint="#FFFFFF" />
+
+    <RelativeLayout
+        android:id="@+id/mid"
+        android:layout_width="120dp"
+        android:layout_height="match_parent"
+        android:layout_above="@id/donw"
+        android:layout_below="@id/Iam"
+        android:layout_centerHorizontal="true"
+        android:layout_marginLeft="3dp"
+        android:layout_marginRight="3dp"
+        android:foreground="@drawable/midi"
+        android:onClick="chooseClick">
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/hard"
+        android:layout_width="120dp"
+        android:layout_height="match_parent"
+        android:layout_above="@id/donw"
+        android:onClick="chooseClick"
+        android:layout_below="@id/Iam"
+        android:layout_toRightOf="@id/mid"
+        android:foreground="@drawable/hardi">
+
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/start"
+        android:layout_width="120dp"
+        android:layout_height="match_parent"
+        android:layout_above="@id/donw"
+        android:onClick="chooseClick"
+        android:layout_below="@id/Iam"
+        android:layout_toLeftOf="@id/mid"
+        android:foreground="@drawable/starti">
+
+    </RelativeLayout>
+
+
+    <FrameLayout
+        android:id="@+id/length"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"/>
+
+
+</RelativeLayout>

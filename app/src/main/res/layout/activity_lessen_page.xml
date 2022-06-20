@@ -1,0 +1,213 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:animateLayoutChanges="true"
+    android:layout_height="match_parent"
+    android:id="@+id/page"
+    tools:context=".lessenPage">
+
+    <RelativeLayout
+        android:id="@+id/buttomMenu"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_alignParentBottom="true"
+        android:background="@color/lightGray">
+
+        <ImageView
+            android:id="@+id/homeB"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:onClick="menuBottomClick"
+            android:layout_centerHorizontal="true"
+            android:foreground="@drawable/ic_home_black_24dp"
+            android:foregroundTint="#000000" />
+        <TextView
+            android:id="@+id/homeT"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/homeB"
+            android:layout_centerHorizontal="true"
+            android:onClick="menuBottomClick"
+            android:text="home"
+            android:textColor="@color/black"
+            android:textSize="16dp"/>
+
+        <ImageView
+            android:id="@+id/learnB"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_marginLeft="30dp"
+            android:onClick="menuBottomClick"
+            android:layout_toRightOf="@id/homeB"
+            android:foreground="?attr/actionModePasteDrawable"
+            android:foregroundTint="#ffffff" />
+
+        <TextView
+            android:id="@+id/lernT"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/learnB"
+            android:onClick="menuBottomClick"
+            android:text="lessons"
+            android:layout_toRightOf="@id/homeB"
+            android:layout_marginLeft="20dp"
+            android:textColor="@color/white"
+            android:textSize="16dp"/>
+
+        <ImageView
+            android:id="@+id/botsB"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_marginRight="30dp"
+            android:onClick="menuBottomClick"
+            android:layout_toLeftOf="@id/homeB"
+            android:foreground="?attr/actionModeSelectAllDrawable"
+            android:foregroundTint="#000000" />
+
+        <TextView
+            android:id="@+id/botT"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/learnB"
+            android:onClick="menuBottomClick"
+            android:text="bots"
+            android:layout_toLeftOf="@id/homeB"
+            android:layout_marginRight="27dp"
+            android:textColor="@color/black"
+            android:textSize="16dp"/>
+
+        <ImageView
+            android:id="@+id/staticB"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_marginRight="30dp"
+            android:onClick="menuBottomClick"
+            android:layout_toLeftOf="@id/botsB"
+            android:foreground="@android:drawable/ic_dialog_info"
+            android:foregroundTint="#000000" />
+
+        <TextView
+            android:id="@+id/staticT"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/learnB"
+            android:text="statistics"
+            android:layout_toLeftOf="@id/botsB"
+            android:onClick="menuBottomClick"
+            android:layout_marginRight="13dp"
+            android:textColor="@color/black"
+            android:textSize="16dp"/>
+
+        <ImageView
+            android:id="@+id/settingB"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:onClick="menuBottomClick"
+            android:layout_marginLeft="30dp"
+            android:layout_toRightOf="@id/learnB"
+            android:foreground="@drawable/settingicon"/>
+
+        <TextView
+            android:id="@+id/settingT"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/learnB"
+            android:text="settings"
+            android:layout_toRightOf="@id/learnB"
+            android:onClick="menuBottomClick"
+            android:layout_marginLeft="22dp"
+            android:textColor="@color/black"
+            android:textSize="16dp"/>
+
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:visibility="invisible"
+        android:id="@+id/main"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:id="@+id/title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="lessenClick"
+            android:text="lessen 10"
+            android:textSize="70dp"/>
+        <TextView
+            android:id="@+id/data1"
+            android:layout_width="wrap_content"
+            android:gravity="center"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/title"/>
+        <TextView
+            android:id="@+id/data2"
+            android:layout_width="wrap_content"
+            android:gravity="center"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/data1"/>
+
+        <TextView
+            android:id="@+id/data3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:layout_below="@id/data2"/>
+
+        <Button
+            android:id="@+id/startB"
+            android:layout_width="300dp"
+            android:layout_height="100dp"
+            android:background="@drawable/roundbutton"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="5dp"
+            android:text="start lesson"
+            android:onClick="startLevel"
+            android:textSize="36dp"
+            android:layout_below="@id/data3"/>
+
+        <Button
+            android:layout_width="250dp"
+            android:layout_height="90dp"
+            android:background="@drawable/roundgraybutton"
+            android:visibility="invisible"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="20dp"
+            android:id="@+id/skip"
+            android:text="skip lesson"
+            android:onClick="skipClick"
+            android:textSize="36dp"
+            android:layout_below="@id/startB"/>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_centerVertical="true"
+        android:id="@+id/offMenu"
+        android:layout_width="match_parent"
+        android:layout_height="300dp">
+
+        <TextView
+            android:id="@+id/offText"
+            android:layout_margin="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="lessons aren't available yet"
+            android:textColor="@color/white"
+            android:textSize="30dp"/>
+
+        <Button
+            android:layout_width="200dp"
+            android:layout_height="50dp"
+            android:layout_below="@id/offText"
+            android:layout_centerHorizontal="true"
+            android:background="@drawable/roundbutton"
+            android:onClick="useBeta"
+            android:text="use beta" />
+
+    </RelativeLayout>
+</RelativeLayout>

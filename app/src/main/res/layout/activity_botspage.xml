@@ -1,0 +1,311 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/page2"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:animateLayoutChanges="true"
+    tools:context=".botspage">
+
+
+
+    <RelativeLayout
+        android:id="@+id/buttomMenu"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_alignParentBottom="true"
+        android:background="@color/lightGray">
+
+        <ImageView
+            android:id="@+id/homeB"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_centerHorizontal="true"
+            android:foreground="@drawable/ic_home_black_24dp"
+            android:foregroundTint="#000000"
+            android:onClick="menuBottomClick" />
+
+        <TextView
+            android:id="@+id/homeT"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/homeB"
+            android:layout_centerHorizontal="true"
+            android:onClick="menuBottomClick"
+            android:text="home"
+            android:textColor="@color/black"
+            android:textSize="16dp" />
+
+        <ImageView
+            android:id="@+id/learnB"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_marginLeft="30dp"
+            android:layout_toRightOf="@id/homeB"
+            android:foreground="?attr/actionModePasteDrawable"
+            android:foregroundTint="#000000"
+            android:onClick="menuBottomClick" />
+
+        <TextView
+            android:id="@+id/lernT"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="menuBottomClick"
+            android:layout_below="@id/learnB"
+            android:layout_marginLeft="20dp"
+            android:layout_toRightOf="@id/homeB"
+            android:text="lessons"
+            android:textColor="@color/black"
+            android:textSize="16dp" />
+
+        <ImageView
+            android:id="@+id/botsB"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_marginRight="30dp"
+            android:layout_toLeftOf="@id/homeB"
+            android:foreground="?attr/actionModeSelectAllDrawable"
+            android:foregroundTint="#ffffff"
+            android:onClick="menuBottomClick" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/learnB"
+            android:layout_marginRight="27dp"
+            android:layout_toLeftOf="@id/homeB"
+            android:onClick="menuBottomClick"
+            android:text="bots"
+            android:textColor="@color/white"
+            android:textSize="16dp" />
+
+        <ImageView
+            android:id="@+id/staticB"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_marginRight="30dp"
+            android:layout_toLeftOf="@id/botsB"
+            android:foreground="@android:drawable/ic_dialog_info"
+            android:foregroundTint="#000000"
+            android:onClick="menuBottomClick" />
+
+        <TextView
+            android:id="@+id/staticT"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/learnB"
+            android:onClick="menuBottomClick"
+            android:layout_marginRight="13dp"
+            android:layout_toLeftOf="@id/botsB"
+            android:text="statistics"
+            android:textColor="@color/black"
+            android:textSize="16dp" />
+
+        <ImageView
+            android:id="@+id/settingB"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_marginLeft="30dp"
+            android:layout_toRightOf="@id/learnB"
+            android:foreground="@drawable/settingicon"
+            android:onClick="menuBottomClick" />
+
+        <TextView
+            android:id="@+id/settingT"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/learnB"
+            android:onClick="menuBottomClick"
+            android:layout_marginLeft="22dp"
+            android:layout_toRightOf="@id/learnB"
+            android:text="settings"
+            android:textColor="@color/black"
+            android:textSize="16dp" />
+
+
+    </RelativeLayout>
+
+
+
+
+    <ScrollView
+        android:layout_above="@id/buttomMenu"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:id="@+id/r2"
+            android:layout_width="match_parent"
+            android:animateLayoutChanges="true"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:id="@+id/showImage"
+                android:layout_width="200dp"
+                android:layout_height="200dp"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="15dp"
+                android:foreground="@drawable/choose" />
+
+            <ImageView
+                android:id="@+id/showImage2"
+                android:visibility="invisible"
+                android:layout_width="200dp"
+                android:layout_height="200dp"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="15dp"
+                android:foreground="@drawable/choose" />
+
+            <FrameLayout
+                android:layout_above="@id/scoreText"
+                android:layout_width="match_parent"
+                android:layout_height="3dp"
+                android:background="@color/white"/>
+            <Button
+                android:id="@+id/startGame"
+                android:layout_width="match_parent"
+                android:layout_marginRight="10dp"
+                android:layout_marginLeft="10dp"
+                android:layout_height="0dp"
+                android:layout_marginTop="20dp"
+                android:layout_below="@id/haedplace"
+                android:layout_centerHorizontal="true"
+                android:onClick="startGame"
+                android:layout_marginBottom="10dp"
+                android:background="@drawable/roundbutton"
+                android:text="play"
+                android:textSize="40dp"/>
+
+            <Button
+                android:id="@+id/startGame2"
+                android:layout_width="wrap_content"
+                android:layout_marginRight="10dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="20dp"
+                android:layout_height="0dp"
+                android:visibility="invisible"
+                android:layout_below="@id/haedplace"
+                android:layout_centerHorizontal="true"
+                android:onClick="startGame"
+                android:layout_marginBottom="10dp"
+                android:background="@drawable/roundbutton"
+                android:text="play"
+                android:textSize="40dp"/>
+
+            <Button
+                android:id="@+id/goOrg"
+                android:layout_width="wrap_content"
+                android:layout_height="45dp"
+                android:layout_marginBottom="20dp"
+                android:background="@drawable/roundgraybutton"
+                android:onClick="goToOrgSet"
+                android:layout_below="@id/startGame"
+                android:layout_centerHorizontal="true"
+                android:text="  defualt Arrangement  "/>
+
+            <TextView
+                android:id="@+id/scoreText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="14dp"
+                android:layout_below="@id/showImage"/>
+
+            <TextView
+                android:id="@+id/levelText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/scoreText"
+                android:textSize="14dp"/>
+
+            <TextView
+                android:id="@+id/styleText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/levelText"
+                android:textSize="14dp"/>
+
+            <HorizontalScrollView
+                android:id="@+id/haedplace"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/styleText"
+                android:layout_marginTop="2dp"
+                android:layout_marginBottom="19dp">
+
+                <RelativeLayout
+                    android:id="@+id/innerLay"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal">
+                    <View
+                        android:id="@+id/helper"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"/>
+
+                    <ImageView
+                        android:id="@+id/mika"
+                        android:layout_width="160dp"
+                        android:layout_height="160dp"
+                        android:layout_centerVertical="true"
+                        android:layout_alignParentTop="true"
+                        android:background="@color/white"
+                        android:foreground="@drawable/darkgraymika"
+                        android:onClick="chooseBot" />
+
+                    <ImageView
+                        android:id="@+id/john"
+                        android:layout_width="160dp"
+                        android:layout_height="160dp"
+                        android:layout_centerVertical="true"
+                        android:layout_toRightOf="@id/mika"
+                        android:background="@color/white"
+                        android:layout_alignParentTop="true"
+                        android:foreground="@drawable/darkgrayjone"
+                        android:onClick="chooseBot" />
+
+                    <ImageView
+                        android:id="@+id/steve"
+                        android:layout_width="160dp"
+                        android:layout_height="160dp"
+                        android:layout_centerVertical="true"
+                        android:layout_toRightOf="@id/john"
+                        android:background="@color/white"
+                        android:layout_alignParentTop="true"
+                        android:foreground="@drawable/darkgraysteve"
+                        android:onClick="chooseBot" />
+
+                    <ImageView
+                        android:id="@+id/teresa"
+                        android:layout_width="160dp"
+                        android:layout_height="160dp"
+                        android:layout_centerVertical="true"
+                        android:layout_toRightOf="@id/steve"
+                        android:layout_alignParentTop="true"
+                        android:background="@color/white"
+                        android:foreground="@drawable/darkgrayteresa"
+                        android:onClick="chooseBot" />
+
+                    <ImageView
+                        android:id="@+id/jong"
+                        android:layout_width="160dp"
+                        android:layout_height="160dp"
+                        android:layout_centerVertical="true"
+                        android:layout_toRightOf="@id/teresa"
+                        android:layout_alignParentTop="true"
+                        android:background="@color/white"
+                        android:foreground="@drawable/darkgrayjong"
+                        android:onClick="chooseBot" />
+
+
+                </RelativeLayout>
+
+
+            </HorizontalScrollView>
+
+        </RelativeLayout>
+
+    </ScrollView>
+
+</RelativeLayout>

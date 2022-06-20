@@ -1,0 +1,204 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/page"
+    android:animateLayoutChanges="true"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".menu">
+    <ImageView
+        android:id="@+id/saveMid"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:foreground="@drawable/backgroundm" />
+
+    <ImageView
+        android:id="@+id/saveEasy"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:foreground="@drawable/backgrounds" />
+
+    <ImageView
+        android:id="@+id/saveHard"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:foreground="@drawable/backgroundh" />
+
+
+    <ImageView
+        android:id="@+id/backImage"
+        android:layout_width="match_parent"
+        android:layout_above="@id/buttomMenu"
+        android:layout_height="match_parent"/>
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="good morning"
+        android:textColor="@color/white"
+        android:textSize="45dp" />
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="3dp"
+        android:layout_below="@id/title"
+        android:layout_marginTop="2dp"
+        android:background="@color/lightGray" />
+
+    <Button
+        android:id="@+id/therlessen"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_below="@id/title"
+        android:onClick="rmainClick"
+        android:layout_marginTop="25dp"
+        android:text="10"
+        android:textSize="75dp"
+        android:background="@drawable/roundbutton" />
+
+    <TextView
+        android:id="@+id/leesenRmain"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/title"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="25dp"
+        android:layout_toRightOf="@id/therlessen"
+        android:textColor="@color/white"
+        android:textSize="40dp" />
+
+    <TextView
+        android:id="@+id/toNext"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/therlessen"
+        android:text=""/>
+
+    <RelativeLayout
+        android:id="@+id/buttomMenu"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_alignParentBottom="true"
+        android:background="@color/lightGray">
+
+        <ImageView
+            android:id="@+id/homeB"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:onClick="menuBottomClick"
+            android:layout_centerHorizontal="true"
+            android:foreground="@drawable/ic_home_black_24dp"
+            android:foregroundTint="#ffffff" />
+        <TextView
+            android:id="@+id/homet"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/homeB"
+            android:layout_centerHorizontal="true"
+            android:onClick="menuBottomClick"
+            android:text="home"
+            android:textColor="@color/white"
+            android:textSize="16dp"/>
+
+        <ImageView
+            android:id="@+id/learnB"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_marginLeft="30dp"
+            android:onClick="menuBottomClick"
+            android:layout_toRightOf="@id/homeB"
+            android:foreground="?attr/actionModePasteDrawable"
+            android:foregroundTint="#000000" />
+
+        <TextView
+            android:id="@+id/lernT"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/learnB"
+            android:text="lessons"
+            android:layout_toRightOf="@id/homeB"
+            android:onClick="menuBottomClick"
+            android:layout_marginLeft="20dp"
+            android:textColor="@color/black"
+            android:textSize="16dp"/>
+
+        <ImageView
+            android:id="@+id/botsB"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_marginRight="30dp"
+            android:onClick="menuBottomClick"
+            android:layout_toLeftOf="@id/homeB"
+            android:foreground="?attr/actionModeSelectAllDrawable"
+            android:foregroundTint="#000000" />
+
+        <TextView
+            android:id="@+id/bott"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/learnB"
+            android:onClick="menuBottomClick"
+            android:text="bots"
+            android:layout_toLeftOf="@id/homeB"
+            android:layout_marginRight="27dp"
+            android:textColor="@color/black"
+            android:textSize="16dp"/>
+
+        <ImageView
+            android:id="@+id/staticB"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_marginRight="30dp"
+            android:onClick="menuBottomClick"
+            android:layout_toLeftOf="@id/botsB"
+            android:foreground="@android:drawable/ic_dialog_info"
+            android:foregroundTint="#000000" />
+
+        <TextView
+            android:id="@+id/staticT"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/learnB"
+            android:text="statistics"
+            android:layout_toLeftOf="@id/botsB"
+            android:onClick="menuBottomClick"
+            android:layout_marginRight="13dp"
+            android:textColor="@color/black"
+            android:textSize="16dp"/>
+
+        <ImageView
+            android:id="@+id/settingB"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:onClick="menuBottomClick"
+            android:layout_marginLeft="30dp"
+            android:layout_toRightOf="@id/learnB"
+            android:foreground="@drawable/settingicon"/>
+
+        <TextView
+            android:id="@+id/settingT"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/learnB"
+            android:text="settings"
+            android:onClick="menuBottomClick"
+            android:layout_toRightOf="@id/learnB"
+            android:layout_marginLeft="22dp"
+            android:textColor="@color/black"
+            android:textSize="16dp"/>
+
+
+    </RelativeLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/toNext"
+        android:layout_above="@id/buttomMenu">
+
+
+
+    </ScrollView>
+
+</RelativeLayout>

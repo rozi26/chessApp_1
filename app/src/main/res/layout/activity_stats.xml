@@ -1,0 +1,631 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/page"
+    tools:context=".stats">
+
+
+    <RelativeLayout
+        android:id="@+id/buttomMenu"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_alignParentBottom="true"
+        android:background="@color/lightGray">
+
+        <ImageView
+            android:id="@+id/homeB"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_centerHorizontal="true"
+            android:foreground="@drawable/ic_home_black_24dp"
+            android:foregroundTint="#000000"
+            android:onClick="menuBottomClick" />
+
+        <TextView
+            android:id="@+id/homeT"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/homeB"
+            android:layout_centerHorizontal="true"
+            android:onClick="menuBottomClick"
+            android:text="home"
+            android:textColor="@color/black"
+            android:textSize="16dp" />
+
+        <ImageView
+            android:id="@+id/learnB"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_marginLeft="30dp"
+            android:layout_toRightOf="@id/homeB"
+            android:foreground="?attr/actionModePasteDrawable"
+            android:foregroundTint="#000000"
+            android:onClick="menuBottomClick" />
+
+        <TextView
+            android:id="@+id/lernT"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="menuBottomClick"
+            android:layout_below="@id/learnB"
+            android:layout_marginLeft="20dp"
+            android:layout_toRightOf="@id/homeB"
+            android:text="lessons"
+            android:textColor="@color/black"
+            android:textSize="16dp" />
+
+        <ImageView
+            android:id="@+id/botsB"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_marginRight="30dp"
+            android:layout_toLeftOf="@id/homeB"
+            android:foreground="?attr/actionModeSelectAllDrawable"
+            android:foregroundTint="#000000"
+            android:onClick="menuBottomClick" />
+
+        <TextView
+            android:id="@+id/botT"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/learnB"
+            android:layout_marginRight="27dp"
+            android:layout_toLeftOf="@id/homeB"
+            android:onClick="menuBottomClick"
+            android:text="bots"
+            android:textColor="@color/black"
+            android:textSize="16dp" />
+
+        <ImageView
+            android:id="@+id/staticB"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_marginRight="30dp"
+            android:layout_toLeftOf="@id/botsB"
+            android:foreground="@android:drawable/ic_dialog_info"
+            android:foregroundTint="#ffffff"
+            android:onClick="menuBottomClick" />
+
+        <TextView
+            android:id="@+id/staticT"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/learnB"
+            android:onClick="menuBottomClick"
+            android:layout_marginRight="13dp"
+            android:layout_toLeftOf="@id/botsB"
+            android:text="statistics"
+            android:textColor="@color/white"
+            android:textSize="16dp" />
+
+        <ImageView
+            android:id="@+id/settingB"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_marginLeft="30dp"
+            android:layout_toRightOf="@id/learnB"
+            android:foreground="@drawable/settingicon"
+            android:onClick="menuBottomClick" />
+
+        <TextView
+            android:id="@+id/settingT"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/learnB"
+            android:onClick="menuBottomClick"
+            android:layout_marginLeft="22dp"
+            android:layout_toRightOf="@id/learnB"
+            android:text="settings"
+            android:textColor="@color/black"
+            android:textSize="16dp" />
+
+
+    </RelativeLayout>
+
+
+    <FrameLayout
+        android:id="@+id/center"
+        android:layout_centerHorizontal="true"
+        android:layout_width="5dp"
+        android:layout_height="0dp"/>
+
+    <TextView
+        android:id="@+id/statsT"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_toLeftOf="@id/center"
+        android:background="@color/gray"
+        android:text="statistics"
+        android:gravity="center"
+        android:onClick="statsClick"
+        android:textSize="36dp"/>
+
+    <TextView
+        android:id="@+id/youT"
+        android:onClick="youClick"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/center"
+        android:text="you"
+        android:background="@color/gray"
+        android:textSize="36dp"
+        android:textColor="@color/black"
+        android:gravity="center"/>
+
+    <ScrollView
+        android:id="@+id/statsS"
+        android:layout_above="@id/buttomMenu"
+        android:layout_below="@id/youT"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:animateLayoutChanges="true"
+            android:orientation="vertical" >
+            <TextView
+                android:id="@+id/Wins"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/white"
+                android:textSize="36dp"
+                android:text="chance to win:"/>
+
+            <TextView
+                android:id="@+id/Loses"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/Wins"
+                android:textColor="@color/white"
+                android:textSize="36dp"
+                android:text="chance to win:"/>
+
+            <TextView
+                android:id="@+id/Draws"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/Loses"
+                android:textColor="@color/white"
+                android:textSize="36dp"
+                android:text="draws:"/>
+
+            <TextView
+                android:id="@+id/Wins960"
+                android:layout_below="@id/chanceToWin"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/white"
+                android:textSize="36dp"
+                android:text="chance to win:"/>
+
+            <TextView
+                android:id="@+id/Loses960"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/Wins960"
+                android:textColor="@color/white"
+                android:textSize="36dp"
+                android:text="chance to win:"/>
+
+            <TextView
+                android:id="@+id/Draws960"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/Loses960"
+                android:textColor="@color/white"
+                android:textSize="36dp"
+                android:text="draws:"/>
+
+            <TextView
+                android:id="@+id/chanceToWin960"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/Draws960"
+                android:textColor="@color/white"
+                android:textSize="30dp"
+                android:text="chance to win:"/>
+
+            <TextView
+                android:id="@+id/chanceToWin"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/Draws"
+                android:textColor="@color/white"
+                android:textSize="36dp"
+                android:text="chance to win:"/>
+
+            <TextView
+                android:id="@+id/AVUT"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/Promotions"
+                android:textColor="@color/white"
+                android:textSize="22dp"
+                android:text="chance to win:"/>
+
+            <TextView
+                android:id="@+id/AVBT"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/AVUT"
+                android:textColor="@color/white"
+                android:textSize="22dp"
+                android:text="chance to win:"/>
+
+            <TextView
+                android:id="@+id/movesdone"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/chanceToWin960"
+                android:textColor="@color/white"
+                android:textSize="36dp"
+                android:text="moves done:"/>
+
+            <TextView
+                android:id="@+id/eatsdone"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/movesdone"
+                android:textColor="@color/white"
+                android:textSize="36dp"
+                android:text="moves done:"/>
+
+            <TextView
+                android:id="@+id/Promotions"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/eatsdone"
+                android:textColor="@color/white"
+                android:textSize="36dp"
+                android:text="moves done:"/>
+
+            <TextView
+                android:id="@+id/botWins"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/haedplace"
+                android:textColor="@color/white"
+                android:textSize="34dp"/>
+
+            <TextView
+                android:id="@+id/botLose"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/botWins"
+                android:textColor="@color/white"
+                android:textSize="34dp"/>
+
+            <TextView
+                android:id="@+id/botchace"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/botLose"
+                android:textColor="@color/white"
+                android:textSize="30dp"/>
+
+            <TextView
+                android:id="@+id/faker"
+                android:layout_width="0dp"
+                android:layout_height="0dp"/>
+
+            <HorizontalScrollView
+                android:id="@+id/toolplace"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_below="@id/AVBT"
+                android:layout_marginBottom="19dp">
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:id="@+id/sol"
+                        android:layout_width="160dp"
+                        android:layout_height="160dp"
+                        android:onClick="toolClick"
+                        android:foreground="@mipmap/whitesoldarkgray"/>
+
+                    <ImageView
+                        android:id="@+id/horse"
+                        android:layout_width="160dp"
+                        android:onClick="toolClick"
+                        android:layout_toRightOf="@id/sol"
+                        android:layout_height="160dp"
+                        android:foreground="@mipmap/whitehoursdarkgray"/>
+
+                    <ImageView
+                        android:id="@+id/bis"
+                        android:layout_toRightOf="@id/horse"
+                        android:layout_width="160dp"
+                        android:layout_height="160dp"
+                        android:onClick="toolClick"
+                        android:foreground="@mipmap/whitebisdarkgray"/>
+
+                    <ImageView
+                        android:id="@+id/run"
+                        android:layout_width="160dp"
+                        android:onClick="toolClick"
+                        android:layout_toRightOf="@id/bis"
+                        android:layout_height="160dp"
+                        android:foreground="@mipmap/whiterundarkgray"/>
+
+                    <ImageView
+                        android:id="@+id/queen"
+                        android:layout_width="160dp"
+                        android:layout_toRightOf="@id/run"
+                        android:onClick="toolClick"
+                        android:layout_height="160dp"
+                        android:foreground="@mipmap/whitequeendarkgray"/>
+
+                    <ImageView
+                        android:id="@+id/king"
+                        android:layout_width="160dp"
+                        android:layout_toRightOf="@id/queen"
+                        android:layout_height="160dp"
+                        android:onClick="toolClick"
+                        android:foreground="@mipmap/whitekingdarkgray"/>
+
+                </RelativeLayout>
+
+            </HorizontalScrollView>
+
+            <TextView
+                android:id="@+id/toolData1"
+                android:text="tool name: queen"
+                android:textSize="36dp"
+                android:textColor="@color/white"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_below="@id/toolplace"/>
+
+            <TextView
+                android:id="@+id/toolData2"
+                android:text="tool name: queen"
+                android:textSize="36dp"
+                android:textColor="@color/white"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_below="@id/toolData1"/>
+
+            <TextView
+                android:id="@+id/toolData3"
+                android:text="tool name: queen"
+                android:textSize="36dp"
+                android:textColor="@color/white"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_below="@id/toolData2"/>
+
+            <HorizontalScrollView
+                android:id="@+id/haedplace"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_below="@id/toolData3"
+                android:layout_marginBottom="19dp">
+
+                <RelativeLayout
+                    android:id="@+id/innerLay"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal">
+
+                    <View
+                        android:id="@+id/helper"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"/>
+
+                    <ImageView
+                        android:id="@+id/mika"
+                        android:layout_width="160dp"
+                        android:layout_height="160dp"
+                        android:layout_centerVertical="true"
+                        android:layout_marginBottom="20dp"
+                        android:layout_alignParentTop="true"
+                        android:background="@color/white"
+                        android:foreground="@drawable/darkgraymika"
+                        android:onClick="chooseBot" />
+
+                    <ImageView
+                        android:id="@+id/john"
+                        android:layout_width="160dp"
+                        android:layout_height="160dp"
+                        android:layout_centerVertical="true"
+                        android:layout_toRightOf="@id/mika"
+                        android:background="@color/white"
+                        android:layout_alignParentTop="true"
+                        android:foreground="@drawable/darkgrayjone"
+                        android:onClick="chooseBot" />
+
+                    <ImageView
+                        android:id="@+id/steve"
+                        android:layout_width="160dp"
+                        android:layout_height="160dp"
+                        android:layout_centerVertical="true"
+                        android:layout_toRightOf="@id/john"
+                        android:background="@color/white"
+                        android:layout_alignParentTop="true"
+                        android:foreground="@drawable/darkgraysteve"
+                        android:onClick="chooseBot" />
+
+                    <ImageView
+                        android:id="@+id/teresa"
+                        android:layout_width="160dp"
+                        android:layout_height="160dp"
+                        android:layout_centerVertical="true"
+                        android:layout_toRightOf="@id/steve"
+                        android:layout_alignParentTop="true"
+                        android:background="@color/white"
+                        android:foreground="@drawable/darkgrayteresa"
+                        android:onClick="chooseBot" />
+
+                    <ImageView
+                        android:id="@+id/jong"
+                        android:layout_width="160dp"
+                        android:layout_height="160dp"
+                        android:layout_centerVertical="true"
+                        android:layout_toRightOf="@id/teresa"
+                        android:layout_alignParentTop="true"
+                        android:background="@color/white"
+                        android:foreground="@drawable/darkgrayjong"
+                        android:onClick="chooseBot" />
+
+                </RelativeLayout>
+
+
+            </HorizontalScrollView>
+
+        </RelativeLayout>
+    </ScrollView>
+
+    <ScrollView
+        android:id="@+id/youS"
+        android:layout_above="@id/buttomMenu"
+        android:layout_below="@id/youT"
+        android:layout_width="match_parent"
+        android:visibility="invisible"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:animateLayoutChanges="true"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/title1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Lessons"
+                android:textColor="@color/white"
+                android:gravity="center"
+                android:textSize="42dp"/>
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="5dp"
+                android:background="@color/white"
+                android:layout_below="@id/title1"/>
+            <TextView
+                android:id="@+id/level"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="you are: bigginer"
+                android:layout_marginTop="5dp"
+                android:layout_below="@id/title1"
+                android:textColor="@color/white"
+                android:textSize="36dp"/>
+
+            <TextView
+                android:id="@+id/lessens"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/level"
+                android:text="you in lesseon: 12"
+                android:textColor="@color/white"
+                android:textSize="36dp"/>
+
+            <TextView
+                android:id="@+id/rmain"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/lessens"
+                android:text="you in lesseon: 12"
+                android:textColor="@color/white"
+                android:textSize="36dp"/>
+
+            <TextView
+                android:id="@+id/donePre"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/rmain"
+                android:text="you in lesseon: 12"
+                android:textColor="@color/white"
+                android:textSize="39dp"/>
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_below="@id/favoritSide"
+                android:text="game list"
+                android:background="@drawable/roundbutton"
+                android:textSize="50dp"
+                android:textColor="@color/white"
+                android:onClick="goToGameList"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="25dp"
+                android:layout_marginLeft="10dp"
+                android:layout_height="wrap_content"/>
+
+            <TextView
+                android:id="@+id/title2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/donePre"
+                android:text="Bots"
+                android:layout_marginTop="20dp"
+                android:textColor="@color/white"
+                android:gravity="center"
+                android:textSize="42dp"/>
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="5dp"
+                android:background="@color/white"
+                android:layout_below="@id/title2"/>
+
+            <TextView
+                android:id="@+id/gamesSave"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:layout_below="@id/title2"
+                android:text="you in lesseon: 12"
+                android:textColor="@color/white"
+                android:textSize="36dp"/>
+
+            <TextView
+                android:id="@+id/favoritBot"
+                android:layout_width="match_parent"
+
+                android:layout_height="wrap_content"
+                android:layout_below="@id/gamesSave"
+                android:text="you in lesseon: 12"
+                android:textColor="@color/white"
+                android:textSize="36dp"/>
+
+            <TextView
+                android:id="@+id/favoritTool"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/favoritBot"
+                android:text="you in lesseon: 12"
+                android:textColor="@color/white"
+                android:textSize="36dp"/>
+
+            <TextView
+                android:id="@+id/favoritSide"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/favoritTool"
+                android:text="you in lesseon: 12"
+                android:textColor="@color/white"
+                android:textSize="36dp"/>
+
+        </RelativeLayout>
+    </ScrollView>
+
+
+
+    <TextView
+        android:id="@+id/fakeText"
+        android:layout_width="0dp"
+        android:text="1"
+        android:layout_height="0dp"/>
+</RelativeLayout>

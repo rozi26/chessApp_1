@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.learnchess">
+
+    <uses-permission android:name="android.permission.VIBRATE" />
+
+    <application
+        android:allowBackup="true"
+        android:animateLayoutChanges="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="learnChess"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="false"
+        android:theme="@style/Theme.Design.NoActionBar">
+        <activity android:name=".createorg"></activity>
+        <activity android:name=".orgsaver" />
+        <activity android:name=".settings" />
+        <activity android:name=".FreeBord" />
+        <activity android:name=".gamelist" />
+        <activity android:name=".stats" />
+        <activity android:name=".botspage" />
+        <activity android:name=".gameOverPage" />
+        <activity android:name=".lessonbord" />
+        <activity android:name=".lessenPage" />
+        <activity
+            android:name=".menu"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".MainActivity"
+            android:screenOrientation="portrait" /> <!-- Sample AdMob app ID: ca-app-pub-3940256099942544~3347511713 -->
+        <meta-data
+            android:name="com.google.android.gms.ads.APPLICATION_ID"
+            android:value="ca-app-pub-8776641318958656~9683236527" />
+    </application>
+
+</manifest>

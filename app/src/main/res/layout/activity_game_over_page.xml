@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/darkGray"
+    tools:context=".gameOverPage">
+
+    <Button
+        android:id="@+id/serrender2"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:layout_below="@id/buttom1"
+        android:layout_marginLeft="25dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginRight="25dp"
+        android:background="@drawable/roundgraybutton"
+        android:onClick="goToMenu"
+        android:text="Surrendered"
+        android:textSize="40dp" />
+
+    <ImageView
+        android:id="@+id/backImage"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:foreground="@drawable/matbackground" />
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:gravity="center"
+        android:textSize="100dp"
+        android:text="try again"/>
+
+    <Button
+        android:id="@+id/buttom1"
+        android:layout_width="match_parent"
+        android:layout_marginRight="25dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginLeft="25dp"
+        android:layout_height="100dp"
+        android:onClick="tryAgain"
+        android:text="try again"
+        android:textSize="40dp"
+        android:layout_below="@id/title"
+        android:background="@drawable/roundgraybutton"/>
+
+    <Button
+        android:id="@+id/watchGame"
+        android:layout_width="match_parent"
+        android:layout_marginRight="25dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginLeft="25dp"
+        android:layout_height="100dp"
+        android:onClick="watchGame"
+        android:text="watch game"
+        android:visibility="invisible"
+        android:textSize="40dp"
+        android:layout_below="@id/serrender"
+        android:background="@drawable/roundgraybutton"/>
+
+    <Button
+        android:id="@+id/serrender"
+        android:layout_width="match_parent"
+        android:layout_marginRight="25dp"
+        android:layout_marginTop="15dp"
+        android:text="Surrendered"
+        android:textSize="40dp"
+        android:layout_marginLeft="25dp"
+        android:onClick="goToMenu"
+        android:layout_height="100dp"
+        android:layout_below="@id/buttom1"
+        android:background="@drawable/roundgraybutton"/>
+
+    <ImageView
+        android:id="@+id/saveWin"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:foreground="@drawable/winbackground"/>
+
+
+
+</RelativeLayout>
